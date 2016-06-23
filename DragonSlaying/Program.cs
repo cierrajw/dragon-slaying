@@ -10,8 +10,8 @@ namespace DragonSlaying
     {
         static Hero MyHero = new Hero
         {
-            Name = "Brienne", //lahblahblah
-            Offense = 4,
+            Name = "Brienne", //lahblahblahfdsafdsafds
+            Offense = 4, //Initializer syntax (commas after everything), instead of putting "myhero.name, myhero.defense, etc.")
             Defense = 2,
             MaxHitPoints = 25,
             HitPoints = 25,
@@ -82,3 +82,4 @@ namespace DragonSlaying
         }
     }
 }
+//ALL CAPS HITPOINTS is a property and the get/set is a 'go between' is something that you can treat as the property/thing itself. 

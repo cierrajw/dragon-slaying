@@ -9,13 +9,26 @@ namespace DragonSlaying
     public class Die
     {
         Random random;
-        public int NumberOfSides { get; set; }
+        //Random random = new Random(); //specific value for random number
 
-        /// <summary>
-        /// Constructs a 6-sided Die.
-        /// </summary>
-        public Die() : this(6)
-        {
+        public int NumberOfSides { get; set; } //public variable within the class
+
+        //get
+        //    {
+        //    return numberOfSides;
+        //    }
+        //set 
+        //{
+
+        //    numberOfSides = value;
+        //}
+
+        //set number
+
+        //Die testDie = new Die();
+        Die myDie = new Die(20);
+        public Die() : this(20) //On this instance of the class the die = 20 sides
+        {       
         }
 
         /// <summary>
@@ -24,7 +37,8 @@ namespace DragonSlaying
         /// <param name="numberOfSides">The number of sides on the Die</param>
         public Die(int numberOfSides)
         {
-            // TODO
+            NumberOfSides = numberOfSides;
+            random = new Random();
         }
 
         /// <summary>
@@ -33,8 +47,11 @@ namespace DragonSlaying
         /// <returns>A random number between 1 and <see cref="NumberOfSides"/></returns>
         public int Roll()
         {
-            // TODO
-            throw new NotImplementedException();
+            Random roll = new Random();
+            roll.Next();
+            Console.ReadLine();
+            Console.ReadKey();
+            return roll.Next(NumberOfSides + 1);           
         }
     }
 }
