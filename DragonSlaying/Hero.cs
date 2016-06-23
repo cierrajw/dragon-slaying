@@ -127,7 +127,11 @@ namespace DragonSlaying
             {
                 HeroDamage = opponent.Offense;
             }
-            
+            if (diceRoll == 20)
+            {
+                HeroDamage = 0;
+            }
+            HitPoints -= HeroDamage;
         }
     }
 }
