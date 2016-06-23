@@ -11,7 +11,7 @@ namespace DragonSlaying
         Random random;
         //Random random = new Random(); //specific value for random number
 
-        public int NumberOfSides { get; set; } //public variable within the class
+        public int NumberOfSides { get; set; } //public variable within the class...property?
 
         //get
         //    {
