@@ -26,10 +26,10 @@ namespace DragonSlaying
         //set number
 
         //Die testDie = new Die();
-        Die myDie = new Die(20);
-        public Die() : this(20) //On this instance of the class the die = 20 sides
-        {       
-        }
+        //Die myDie = new Die(20);
+        //public Die() : this(20) //On this instance of the class the die = 20 sides
+        //{       
+        //}
 
         /// <summary>
         /// Constructs a Die with the specified number of sides.
